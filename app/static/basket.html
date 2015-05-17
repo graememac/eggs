@@ -1,0 +1,49 @@
+<div id="basket_container">
+          
+    <div id="basket_heading">
+        <div style="float:left;">Basket</div>
+        <div style="float:right;">{{ number_of_items_in_basket }} items</div>
+    </div>
+    
+    <div id="total_price_container">
+            
+        <div style="float:left;">
+            Total Price
+        </div>
+        
+        <div style="float:right;">
+            {{ total_price | currency:"£" }}
+        </div>
+        
+    </div>
+    
+    <div class="basket_item" data-ng-repeat="product in basket.items">
+        
+        <div style="overflow:hidden;">
+            <div class="basket_product_image_container">
+                <img class="basket_product_image" data-ng-src="{{ product.Image }}" alt="Image of {{ product.Name }}" />
+            </div>
+            
+            <div class="basket_product_name">
+                {{ product.Name }}
+            </div>
+            
+            <div class="basket_remove_product_container">
+                <a class="product_link" href="#" data-ng-click="remove_item_from_basket(product)">X</a>
+            </div>
+        </div>
+        
+        <div style="overflow:hidden;">
+            
+            <div class="basket_product_quantity">
+                Quantity: {{ product.BasketQty }}
+            </div>
+            
+            
+            <div class="basket_product_price">
+                {{ product.BasketQty * product.Price | currency:"£" }}
+            </div>
+            
+        </div>
+    </div>
+</div>

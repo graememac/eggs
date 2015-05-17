@@ -1,0 +1,19 @@
+{
+  "name": "eggs",
+  "version": "1.0.0",
+  "description": "Tesco UI test",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/graememac/eggs.git"
+  },
+  "author": "Graeme MacFarlane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graememac/eggs/issues"
+  },
+  "homepage": "https://github.com/graememac/eggs",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}

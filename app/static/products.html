@@ -1,0 +1,50 @@
+<div id="products_container">
+            
+    <div style="overflow:hidden;">
+        
+        <div id="sort_products_container">
+            <div id="sort_products_sort_by">
+                Sort by
+            </div>
+            
+            <div style="float:left;">
+                <select data-ng-model="orderProp">
+                    <option value="Name">Alphabetical A-Z</option>
+                    <option value="-Name">Alphabetical Z-A</option>
+                    <option value="Price">Price Low to High</option>
+                    <option value="-Price">Price High to Low</option>
+                </select>
+            </div>
+        </div>
+    </div>
+      
+    <div class="product" data-ng-repeat="product in store.products.Details | orderBy:orderProp">
+        
+        <div class="product_image">
+            <img data-ng-src="{{ product.Image }}" alt="Image of {{ product.Name }}" />
+        </div>
+        
+        <div class="product_name">
+            {{ product.Name }}
+        </div>
+        
+        <div style="margin-bottom:10px;">
+            <b>{{ product.Price | currency:"£" }}</b>
+        </div>
+        
+        <div style="margin-bottom:10px;">
+            <a href="#" class="product_link" data-ng-click="add_item_to_basket(product)">Add item</a>
+        </div>
+        
+        <div data-ng-show="product.Promotions.length">
+            <div style="font-size:14px;">
+                <u>Promotions</u>
+            </div>
+            
+            <div class="product_promotion_description" data-ng-repeat="promotion in product.Promotions">
+                {{ promotion.Description }}
+            </div>
+        </div>
+        
+    </div>
+</div>
