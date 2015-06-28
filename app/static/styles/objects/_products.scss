@@ -1,6 +1,10 @@
 #products_container {
     float:right;
     width:75%;
+
+    .product_name {
+        font-style:italic;
+    }
 }
 #sort_products_container {
     float:right;
