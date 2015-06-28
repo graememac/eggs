@@ -2,6 +2,10 @@
     float:right;
     width:75%;
 
+    div {
+        @include border-radius(10px);
+    }
+
     .product_name {
         font-style:italic;
     }
