@@ -1,0 +1,32 @@
+#products_container {
+    float:right;
+    width:75%;
+}
+#sort_products_container {
+    float:right;
+    margin-bottom:20px;
+}
+#sort_products_sort_by {
+    float:left;
+    margin-right:20px;
+}
+.product {
+    border:1px solid #CCC;
+    height:400px;
+    float:left;
+    margin-bottom:20px;
+    padding:10px;
+    width:20%;
+}
+.product_name {
+    height:80px;
+    margin-bottom:10px;
+}
+.product_image {
+    margin-bottom:10px;
+    text-align:center;
+}
+.product_promotion_description {
+    font-size:12px;
+    margin-top:5px;
+}
