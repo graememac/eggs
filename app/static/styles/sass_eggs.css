@@ -1,0 +1,133 @@
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0; }
+
+header, footer, nav, section, article, hgroup, figure {
+  display: block; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #FFFFFF; }
+
+#app_container {
+  margin-bottom: 20px;
+  overflow: hidden; }
+
+.product_link {
+  font-size: 1em;
+  color: blue;
+  text-decoration: none; }
+
+@media screen and (max-width: 550px) {
+  /* basket */
+  #basket_container {
+    margin-bottom: 20px;
+    width: 100%; }
+
+  /* products */
+  #products_container {
+    width: 100%; }
+
+  .product {
+    height: 350px;
+    width: 100%; }
+
+  .product_name {
+    height: 35px; } }
+/* Desktop only */
+@media screen and (min-width: 550px) {
+  #app_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px; } }
+#basket_container {
+  border: 1px solid #CCC;
+  float: right;
+  margin-left: 2%;
+  width: 23%; }
+
+#basket_heading {
+  background: #00539f;
+  color: #FFF;
+  overflow: hidden;
+  padding: 10px; }
+
+#total_price_container {
+  border-bottom: 1px solid #CCC;
+  overflow: hidden;
+  padding: 10px; }
+
+.basket_item {
+  border-bottom: 1px solid #CCC;
+  padding: 5px;
+  padding-bottom: 5px; }
+
+.basket_product_image_container {
+  float: left;
+  margin-right: 10px;
+  width: 50px; }
+
+.basket_product_image {
+  height: 100%;
+  width: 100%; }
+
+.basket_product_name {
+  float: left;
+  font-size: 12px;
+  width: 180px; }
+
+.basket_remove_product_container {
+  float: right;
+  font-size: 18px; }
+
+.basket_product_quantity {
+  float: left;
+  font-size: 12px; }
+
+.basket_product_price {
+  float: right;
+  font-size: 14px;
+  font-weight: bold; }
+
+#products_container {
+  float: right;
+  width: 75%; }
+
+#sort_products_container {
+  float: right;
+  margin-bottom: 20px; }
+
+#sort_products_sort_by {
+  float: left;
+  margin-right: 20px; }
+
+.product {
+  border: 1px solid #CCC;
+  height: 400px;
+  float: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 20%; }
+
+.product_name {
+  height: 80px;
+  margin-bottom: 10px; }
+
+.product_image {
+  margin-bottom: 10px;
+  text-align: center; }
+
+.product_promotion_description {
+  font-size: 12px;
+  margin-top: 5px; }
+
+/*# sourceMappingURL=sass_eggs.css.map */
