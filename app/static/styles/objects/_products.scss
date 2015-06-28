@@ -3,7 +3,7 @@
     width:75%;
 
     div {
-        @include border-radius(10px);
+        @include border-radius(2*10px);
     }
 
     .product_name {
