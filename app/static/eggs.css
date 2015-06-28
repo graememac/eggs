@@ -1,15 +1,24 @@
 body {
+<<<<<<< HEAD
     font-family:arial;
     background-color: red;
+=======
+    font-family:'times new roman';
+>>>>>>> css-work
 }
 #app_container {
     margin-bottom:20px;
     overflow:hidden;
 }
 .product_link {
+<<<<<<< HEAD
     color:blue;
   
     font-size:30px;
+=======
+    color:purple;
+    text-decoration:none;
+>>>>>>> css-work
 }
 
 
