@@ -18,13 +18,18 @@
     float:left;
     margin-right:20px;
 }
+.dotted-border {
+    border-style:dotted;
+}
 .product {
-    border:1px solid #CCC;
+    border-width:1px;
+    border-color:#CCC;
     height:400px;
     float:left;
     margin-bottom:20px;
     padding:10px;
     width:20%;
+    @extend .dotted-border;
 }
 .product_name {
     height:80px;
